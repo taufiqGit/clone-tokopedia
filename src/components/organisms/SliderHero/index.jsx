@@ -12,22 +12,29 @@ import './custom-swiper.css'
 
 export default function SliderHero(params) {
     return (
-      <section className='container mx-auto max-w-screen-xl px-10 mt-10'>
+      <section className='container mx-auto w-auto max-w-screen-xl px-10 mt-8'>
         <Swiper
         modules={[Autoplay, Navigation, Pagination]}
         spaceBetween={10}
         slidesPerView={1}
         autoplay
+        loop={true}
         pagination={{ clickable: true }}
         navigation={{ }}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide>
-          <img className='w-full max-w-screen-xl h-auto rounded-lg block' style={{minHeight: '240px'}} src={SlideSatu} alt="" />
+        <SwiperSlide >
+          <img className='w-full w-auto h-auto rounded-lg block' style={{minHeight: '240px'}} src={SlideSatu} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='w-full max-w-screen-xl h-auto rounded-lg block' style={{minHeight: '240px'}} src={SlideDua} alt="" />
+          <img className='w-full w-auto h-auto rounded-lg block' style={{minHeight: '240px'}} src={SlideDua} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className='w-full w-auto  h-auto rounded-lg block' style={{minHeight: '240px'}} src={SlideSatu} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className='w-full  w-auto  h-auto rounded-lg block' style={{minHeight: '240px'}} src={SlideDua} alt="" />
         </SwiperSlide>
       </Swiper>        
       </section>

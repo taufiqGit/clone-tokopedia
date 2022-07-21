@@ -7,7 +7,8 @@ module.exports = {
         'gray-1': 'rgba(49,53,59,0.68)',
         'gray-2': '#f3f4f5',
         'gray-3': 'rgba(0,0,0,.54)',
-        'green-1': 'rgb(3,172,14)'
+        'green-1': 'rgb(3,172,14)',
+        'black-1': 'rgba(49, 53, 59, 0.96)'
       },
       fontFamily: {
         'OpenSauceOneRegular': 'OpenSauceOneRegular'
@@ -17,6 +18,9 @@ module.exports = {
       },
       width: {
         '6/10': '60%'
+      },
+      boxShadow: {
+        '1': '0 1px 6px 0 rgb(49 53 59 / 12%)'
       }
     },
   },
