@@ -6,7 +6,7 @@ export default function TopNavbar() {
         <nav className='w-full flex justify-between px-10 h-9 bg-gray-2'>
             <div className='flex items-center'>
                 <img src={phoneImg} className="w-3.5" alt="logo hape" />
-                <p className='text-gray-1 ml-1.5 text-xs hover:text-green-1 cursor-pointer'>Download Tokopedia App</p>
+                <p className='text-gray-1 ml-1.5 text-tiny hover:text-green-1 cursor-pointer'>Download Tokopedia App</p>
             </div>
             <div className='flex items-center'>
                 <BtnListSmall menuName="Tentang Tokopedia"/>

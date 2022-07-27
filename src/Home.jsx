@@ -1,16 +1,18 @@
 import Navbar from "./components/organisms/Navbar"
 import SliderHero from "./components/organisms/SliderHero"
 import TopNavbar from "./components/organisms/TopNavbar"
-import TopUp from "./components/organisms/TopUp"
+import CategoryTopUp from "./components/organisms/CategoryTopUp"
 
 function Home() {
 
   return (
-    <div className="font-OpenSauceOneRegular">
-      <TopNavbar/>
-      <Navbar/>
+    <div className="font-OpenSans">
+      <header className="fixed z-20 left-0 right-0 top-0">
+        <TopNavbar/>
+        <Navbar/>
+      </header>
       <SliderHero/>
-      <TopUp/>
+      <CategoryTopUp/>
     </div>
     
   )

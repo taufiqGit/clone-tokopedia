@@ -1,8 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
-@font-face {
-    font-family: 'Open Sauce One';
-    src: url(''), url();
+
+/* @layer base{
+    @font-face {
+        font-family: 'Open Sauce One';
+        src: url('/font/OpenSauceOne-Bold.ttf') format('tff');
+    } 
+    html {
+        
+    }   
 } */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
