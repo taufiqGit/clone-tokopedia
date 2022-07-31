@@ -25,6 +25,9 @@ module.exports = {
       },
       fontSize: {
         tiny: '0.785rem'
+      },
+      spacing: {
+        '112': '30rem'
       }
     },
   },

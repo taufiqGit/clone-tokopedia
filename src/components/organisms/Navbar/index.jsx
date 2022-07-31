@@ -1,3 +1,5 @@
+import { useContext } from 'react'
+import { UIContext } from '../../../context'
 import logo from '../../../img/2.png'
 import iconCart from '../../../img/4.png'
 import locationIcon from '../../../img/location.svg'
@@ -5,12 +7,27 @@ import BtnListSmall from '../../atoms/BtnListSmall'
 import ButtonAuth from '../../atoms/ButtonAuth'
 import InputSearch from '../../molecules/InputSearch'
 
-export default function Navbar(params) {
+export default function Navbar() {
+    const { dispatch, openModalCategory, openOverlay } = useContext(UIContext)
+
+    const handleModalCategory =()=>{
+        if (openModalCategory) {
+            dispatch({
+                type: 'CLOSE_MODAL_CATEGORY',
+            })                
+        } else{
+            dispatch({
+                type: 'OPEN_MODAL_CATEGORY',
+            })            
+        }
+    }
+
     return (
         <div className='w-full shadow-md bg-white shadow-gray-2 py-3.5'>
             <nav className='w-full flex items-center px-10'>
                 <img src={logo} className='w-40 h-10' alt="logo tokped" />
-                <div className='text-gray-3 mx-4 text-tiny hover:text-green-1 cursor-pointer'>Kategori</div>
+                <div onClick={() => handleModalCategory()} 
+                className='text-gray-3 mx-4 text-tiny hover:text-green-1 cursor-pointer'>Kategori</div>
                 <InputSearch/>
                 <button className='w-6 mx-7'>
                     <img className='w-full' src={iconCart} alt="cart" />
