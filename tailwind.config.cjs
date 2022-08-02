@@ -9,7 +9,12 @@ module.exports = {
         'gray-3': 'rgba(0,0,0,.54)',
         'gray-4': '#E5E7E9',
         'green-1': 'rgb(3,172,14)',
-        'black-1': 'rgba(49, 53, 59, 0.96)'
+        'black-1': 'rgba(49, 53, 59, 0.96)',
+        'black-2': '#212121',
+        'bgleft-1': 'rgb(227, 102, 187)',
+        'bgleft-2': 'rgb(109, 171, 248)'
+      },
+      backgroundImage: {
       },
       fontFamily: {
         'OpenSans': ['Open Sans', 'sans-serif']

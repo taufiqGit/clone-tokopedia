@@ -6,12 +6,19 @@ import { useContext } from "react"
 import BlackShadow from "./components/molecules/blackShadow"
 import BoxMenu from "./components/organisms/boxMenu"
 import { UIContext } from "./context"
+import EtalaseProduct from "./components/organisms/EtalaseProduct"
+import EtalaseProductWithoutPromo from "./components/organisms/EtalaseProductWithoutBgLeft"
+
+import imgLeft1 from './img/product/bg-left.webp'
+import imgLeft2 from './img/product/bg-left-2.webp'
+import imgLeft3 from './img/product/bg-left-3.webp'
+import EtalaseProductWithoutBgLeft from "./components/organisms/EtalaseProductWithoutBgLeft"
 
 function Home() {
   const { openOverlay, openModalCategory } = useContext(UIContext)
 
   return (
-    <div className="font-OpenSans h-auto pb-20 relative">
+    <div className="font-OpenSans h-auto relative">
 
       {openOverlay ? <BlackShadow/> : ''}
 
@@ -22,6 +29,14 @@ function Home() {
       </header>
       <SliderHero/>
       <CategoryTopUp/>
+      <hr className="container mx-auto w-auto max-w-screen-xl px-10 mt-10"/>
+      <EtalaseProduct title="Traktiran Pengguna Baru" imgLeft={imgLeft1} bgColorLeft='rgb(227, 102, 187)'/>
+      <hr className="container mx-auto w-auto max-w-screen-xl px-10 mt-10"/>
+      <EtalaseProduct title="Kejar Diskon Cantik" imgLeft={imgLeft2} bgColorLeft="rgb(109, 171, 248)"/>
+      <hr className="container mx-auto w-auto max-w-screen-xl px-10 mt-10"/>
+      <EtalaseProduct title="Official Store" imgLeft={imgLeft3} bgColorLeft="rgb(105, 212, 29)"/>
+      <hr className="container mx-auto w-auto max-w-screen-xl px-10 mt-10"/>
+      <EtalaseProductWithoutBgLeft title="Elektronik pilihan"/>
     </div>
   )
 }
