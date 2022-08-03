@@ -13,6 +13,8 @@ import imgLeft1 from './img/product/bg-left.webp'
 import imgLeft2 from './img/product/bg-left-2.webp'
 import imgLeft3 from './img/product/bg-left-3.webp'
 import EtalaseProductWithoutBgLeft from "./components/organisms/EtalaseProductWithoutBgLeft"
+import RecomProduct from "./components/organisms/recomProduct"
+import CariTabTab from "./components/organisms/CariTabTab"
 
 function Home() {
   const { openOverlay, openModalCategory } = useContext(UIContext)
@@ -37,6 +39,9 @@ function Home() {
       <EtalaseProduct title="Official Store" imgLeft={imgLeft3} bgColorLeft="rgb(105, 212, 29)"/>
       <hr className="container mx-auto w-auto max-w-screen-xl px-10 mt-10"/>
       <EtalaseProductWithoutBgLeft title="Elektronik pilihan"/>
+      <hr className="w-full h-2.5 bg-gray-200 mt-8"/>
+      <RecomProduct/>
+      <CariTabTab/>
     </div>
   )
 }

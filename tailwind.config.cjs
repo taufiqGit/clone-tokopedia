@@ -11,10 +11,15 @@ module.exports = {
         'green-1': 'rgb(3,172,14)',
         'black-1': 'rgba(49, 53, 59, 0.96)',
         'black-2': '#212121',
+        'orange-1': '#FFA617',
         'bgleft-1': 'rgb(227, 102, 187)',
         'bgleft-2': 'rgb(109, 171, 248)'
       },
       backgroundImage: {
+        'tab-recom-a': "url('./src/img/bg-tab-recom-product/a.jpg')",
+        'tab-recom-b': "url('./src/img/bg-tab-recom-product/b.jpg')",
+        'tab-recom-c': "url('./src/img/bg-tab-recom-product/c.jpg')",
+        'tab-recom-d': "url('./src/img/bg-tab-recom-product/d.jpg')",
       },
       fontFamily: {
         'OpenSans': ['Open Sans', 'sans-serif']
