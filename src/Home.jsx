@@ -20,18 +20,6 @@ import AboutText from "./components/organisms/AboutText"
 import Footer from "./components/organisms/footer"
 
 function Home() {
-  const { openOverlay, openModalCategory } = useContext(UIContext)
-  const getWeather = async()=>{
-    try {
-      const Req = await axios.get('api.openweathermap.org/data/2.5/forecast?lat=32&lon=139&appid=c6e526b7db498c45bc5b983653b7d9d8')
-      console.log(Req);
-    } catch (error) {
-      console.log(error);
-    }
-  }
-  useEffect(()=>{
-    getWeather()
-  },[])
 
   return (
     <div className="font-OpenSans h-auto relative">
