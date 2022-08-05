@@ -2,7 +2,7 @@ import Navbar from "./components/organisms/Navbar"
 import SliderHero from "./components/organisms/SliderHero"
 import TopNavbar from "./components/organisms/TopNavbar"
 import CategoryTopUp from "./components/organisms/CategoryTopUp"
-import { useContext } from "react"
+import { useContext, useEffect } from "react"
 import BlackShadow from "./components/molecules/blackShadow"
 import BoxMenu from "./components/organisms/boxMenu"
 import { UIContext } from "./context"
@@ -15,9 +15,23 @@ import imgLeft3 from './img/product/bg-left-3.webp'
 import EtalaseProductWithoutBgLeft from "./components/organisms/EtalaseProductWithoutBgLeft"
 import RecomProduct from "./components/organisms/recomProduct"
 import CariTabTab from "./components/organisms/CariTabTab"
+import axios from "axios"
+import AboutText from "./components/organisms/AboutText"
+import Footer from "./components/organisms/footer"
 
 function Home() {
   const { openOverlay, openModalCategory } = useContext(UIContext)
+  const getWeather = async()=>{
+    try {
+      const Req = await axios.get('api.openweathermap.org/data/2.5/forecast?lat=32&lon=139&appid=c6e526b7db498c45bc5b983653b7d9d8')
+      console.log(Req);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  useEffect(()=>{
+    getWeather()
+  },[])
 
   return (
     <div className="font-OpenSans h-auto relative">
@@ -42,6 +56,8 @@ function Home() {
       <hr className="w-full h-2.5 bg-gray-200 mt-8"/>
       <RecomProduct/>
       <CariTabTab/>
+      <AboutText/>
+      <Footer/>
     </div>
   )
 }
