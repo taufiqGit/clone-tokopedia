@@ -23,16 +23,16 @@ export default function SliderHero(params) {
         navigation
       >
         <SwiperSlide >
-          <img className='w-full w-auto h-auto rounded-xl block' style={{minHeight: '240px'}} src={SlideSatu} alt="" />
+          <img className='w-full h-auto rounded-xl block' style={{minHeight: '240px'}} src={SlideSatu} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='w-full w-auto h-auto rounded-xl block' style={{minHeight: '240px'}} src={SlideDua} alt="" />
+          <img className='w-full h-auto rounded-xl block' style={{minHeight: '240px'}} src={SlideDua} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='w-full w-auto  h-auto rounded-xl block' style={{minHeight: '240px'}} src={SlideSatu} alt="" />
+          <img className='w-full  h-auto rounded-xl block' style={{minHeight: '240px'}} src={SlideSatu} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='w-full  w-auto  h-auto rounded-xl block' style={{minHeight: '240px'}} src={SlideDua} alt="" />
+          <img className='w-full   h-auto rounded-xl block' style={{minHeight: '240px'}} src={SlideDua} alt="" />
         </SwiperSlide>
       </Swiper>        
       </section>

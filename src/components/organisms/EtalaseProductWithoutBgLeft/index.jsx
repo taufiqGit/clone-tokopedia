@@ -16,7 +16,7 @@ export default function EtalaseProductWithoutBgLeft({ title }) {
     return (
         <div className="container mx-auto w-auto max-w-screen-xl px-10 mt-10">
             <div>
-                <h2 className='text-black-1 text-2xl font-extrabold'>{title} <a className='text-base text-green-1' href=''>Lihat Semua</a></h2>
+                <h2 className='text-black-1 text-xl font-bold'>{title} <a className='text-base text-green-1' href=''>Lihat Semua</a></h2>
             </div>
             <Swiper 
                 modules={[Navigation]}

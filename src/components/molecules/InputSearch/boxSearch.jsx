@@ -10,7 +10,7 @@ import Thumbnail6 from '../../../img/modal-search/f.jpg'
 export default function BoxSearch(params) {
     return (
         <div className='w-full absolute z-10 rounded-lg h-64 overflow-y-auto bg-white p-3'>
-            <h2 className='text-black-1 text-xl font-extrabold'>Pencarian Popular <a className='text-base text-green-1' href=''>Refresh</a></h2>
+            <h2 className='text-black-1 text-lg font-bold'>Pencarian Popular <a className='text-base text-green-1' href=''>Refresh</a></h2>
             <div className='mt-3 grid grid-cols-2'>
                 <ItemCatSearch thumbnail={Thumbnail1} text="Elektronik"/>
                 <ItemCatSearch thumbnail={Thumbnail2} text="Fashion Pria"/>

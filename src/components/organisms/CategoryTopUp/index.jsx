@@ -17,11 +17,11 @@ export default function CategoryTopUp() {
             <div className='shadow-1 rounded-lg p-5'>
                 <div className='flex gap-x-1.5 w-full'>
                     <div className='w-1/2'>
-                        <h2 className='text-black-1 text-xl font-extrabold'>Kategori Pilihan</h2>
+                        <h2 className='text-black-1 text-xl font-bold'>Kategori Pilihan</h2>
                         <CategorySlider/>
                     </div>
                     <div className='w-1/2'>
-                        <h2 className='text-black-1 text-xl font-extrabold'>Top Up & Tagihan <a className='text-base text-green-1' href=''>Lihat Semua</a></h2>
+                        <h2 className='text-black-1 text-xl font-bold'>Top Up & Tagihan <a className='text-base text-green-1' href=''>Lihat Semua</a></h2>
                         <TopUpTab/>
                     </div>
                 </div>  

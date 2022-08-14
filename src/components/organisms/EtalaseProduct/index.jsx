@@ -16,7 +16,7 @@ export default function EtalaseProduct({ title, imgLeft, bgColorLeft }) {
     return (
         <div className="container mx-auto w-auto max-w-screen-xl px-10 mt-10">
             <div>
-                <h2 className='text-black-1 text-2xl font-extrabold'>{title} <a className='text-base text-green-1' href=''>Lihat Semua</a></h2>
+                <h2 className='text-black-1 text-xl font-bold'>{title} <a className='text-base text-green-1' href=''>Lihat Semua</a></h2>
             </div>
             <Swiper 
                 modules={[Navigation]}
@@ -37,7 +37,7 @@ export default function EtalaseProduct({ title, imgLeft, bgColorLeft }) {
                 }}
                 className="px-2 mt-3.5"
             >
-            <div className={`h-96 w-72 flex justify-start items-center rounded-lg  overflow-hidden absolute top-[8px] ${numSlide > 0 ? '-translate-x-full ml-[-8px]' : ''}`} style={{backgroundColor: bgColorLeft}}>
+            <div className={`h-[25.5rem] w-72 flex justify-start items-center rounded-lg  overflow-hidden absolute top-[14px] ${numSlide > 0 ? '-translate-x-full ml-[-8px]' : ''}`} style={{backgroundColor: bgColorLeft}}>
                 <img className="w-2/3" src={imgLeft} alt="tat" />
             </div>
                 <SwiperSlide className="my-8">
